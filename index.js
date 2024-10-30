@@ -1,4 +1,5 @@
 // svarar på uppgifterna,
+// fråga 1
 const names = ["Zlatan", "Beckham", "Zidane", "Maradona", "Pele", "Ronaldo"];
 console.log(names[3]); // svar är Mardona 
 
@@ -230,3 +231,63 @@ for (let i = 0; i < words.length; i++) {
 console.log(firstLetters);
 
 // fråga 31
+
+let summa = 0;
+let i = 0;
+
+while (i < numbers.length && sum <= 25) {
+    console.log(numbers[i]); 
+    summa += numbers[i];      
+    i++;                    
+}
+
+console.log("Total summa:", summa); 
+
+
+// fråga 32 
+//const mixedNumbers = [3, -5, 12, -1, 8, -6];
+let sum = 0;
+
+for (const number of mixedNumbers) {
+    sum += number;
+}
+
+console.log("Summan är:", sum); // Output: Summan är: 11
+
+
+// fråga 33
+const temperatures = [15, 22, 19, 30, 28, 18, 25];
+let högst = temperatures[0];
+
+for (let index = 0; index < temperatures.length; index++) {
+    if (temperatures[index] > högst) {
+        högst = temperatures[index];
+    }
+}
+console.log("Högsta Temp:", högst);
+
+
+// fråga 34
+
+//const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+let count = 0;
+
+for (let word of words) {
+    if (word.length > 5) {
+        count++;
+    }
+}
+
+console.log("Antal ord med fler än fem bokstäver:", count); // Output: Antal ord med fler än fem bokstäver: 2
+
+
+// fråga 35
+//const numbers = [5, 8, 12, 20, 3];
+let i = 0;
+while (i < numbers.length) {
+    if (numbers[i] % 2 !== 0) { // Kontrollera om talet är udda
+        console.log("Första udda talet är:", numbers[i]);
+        break; // Avbryt loopen vid första udda talet
+    }
+    i++;
+}
