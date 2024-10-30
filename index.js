@@ -104,3 +104,34 @@ while (i < numbers.length ) {
     console.log(numbers[i]);
     i++;
 }
+
+//fråga 28
+let index = 0;
+let negativeCount = 0;
+
+while (index < mixedNumbers.length) {
+  if (mixedNumbers[index] < 0) {
+    negativeCount++;
+  }
+  index++;
+}
+
+console.log("Antalet negativa tal är:", negativeCount);
+
+//fråga 29
+
+const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+for (let index = 0; index < words.length; index++) {
+    console.log(words[index], + words[index].length);
+    
+}
+
+// fråga 30 
+let firstLetters = ""; // Skapa en tom sträng för att samla första bokstäverna
+for (let i = 0; i < words.length; i++) {
+  firstLetters += words[i][0]; // Lägg till första bokstaven i varje ord till strängen
+}
+
+console.log(firstLetters);
+
+// fråga 31
